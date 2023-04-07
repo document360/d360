@@ -1,6 +1,6 @@
 module.exports = {
     branches: ["main", { name: "next", prerelease: true }],
-    repositoryUrl: "https://github.com/SuhasParameshwara/CLI-Repo.git",
+    repositoryUrl: "https://github.com/document360/d360",
     plugins: [
         "@semantic-release/commit-analyzer",
         {
