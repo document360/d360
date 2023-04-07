@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/document360/d360/compare/v1.0.2...v1.0.3) (2023-04-07)
+
+
+### Bug Fixes
+
+* updated publish and gitignore file ([9d03952](https://github.com/document360/d360/commit/9d03952365f7e02ae364b9ac52bb460bfb7a5c9f))
+
 ## [1.0.2](https://github.com/document360/d360/compare/v1.0.1...v1.0.2) (2023-04-07)
 
 
