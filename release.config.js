@@ -1,6 +1,6 @@
 module.exports = {
     branches: ["main", { name: "next", prerelease: true }],
-    repositoryUrl: "https://github.com/document360/d360",
+    repositoryUrl: "https://github.com/document360/d360.git",
     plugins: [
         "@semantic-release/commit-analyzer",
         {
