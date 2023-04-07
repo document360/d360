@@ -11,7 +11,7 @@
     "execute-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\""
   },
   "bin": {
-    "d360clitestinit": "bin/d360clitestinit"
+    "d360": "bin/d360"
   },
   "repository": {
     "type": "git",
