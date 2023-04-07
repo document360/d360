@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/document360/d360/compare/v1.0.1...v1.0.2) (2023-04-07)
+
+
+### Bug Fixes
+
+* added config store ([4a29a1f](https://github.com/document360/d360/commit/4a29a1f8ced646231b59a3fc955bbdee872965a6))
+
 ## [1.0.1](https://github.com/document360/d360/compare/v1.0.0...v1.0.1) (2023-04-07)
 
 
