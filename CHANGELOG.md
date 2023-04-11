@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/document360/d360/compare/v1.0.3...v1.0.4) (2023-04-11)
+
+
+### Bug Fixes
+
+* api url changes ([85ce8ac](https://github.com/document360/d360/commit/85ce8ace971323c043c0586e32774688ea080844))
+
 ## [1.0.3](https://github.com/document360/d360/compare/v1.0.2...v1.0.3) (2023-04-07)
 
 
