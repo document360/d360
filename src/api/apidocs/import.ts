@@ -23,7 +23,7 @@ export default async function importFlow(options: ImportCommandOptions) {
             'api_token': options.apiKey
         })
     };
-    let requestUrl = `/v2/APIDocs/import/${options.userId}`;
+    let requestUrl = `/v2/apidocs/import/${options.userId}`;
     if (options.publish) {
         requestUrl += `/?publishArticles=true`;
     }

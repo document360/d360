@@ -22,7 +22,7 @@ export default async function resyncFlow(options: ResyncCommandOptions) {
             'api_token': options.apiKey
         })
     };
-    let requestUrl = `/v2/APIDocs/${options.apiReferenceId}/resync/${options.userId}`;
+    let requestUrl = `/v2/apidocs/${options.apiReferenceId}/resync/${options.userId}`;
     if (options.publish) {
         requestUrl += `/?publishArticles=true`;
     }
