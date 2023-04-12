@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/document360/d360/compare/v1.0.4...v1.0.5) (2023-04-12)
+
+
+### Bug Fixes
+
+* updated readme ([c1dd117](https://github.com/document360/d360/commit/c1dd1170ec5b897fc79f78505e80e04438773c8d))
+
 ## [1.0.4](https://github.com/document360/d360/compare/v1.0.3...v1.0.4) (2023-04-11)
 
 
