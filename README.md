@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://readme.com">Document360</a> official command-line interface (CLI)
+  <a href="https://document360.com">Document360</a> official command-line interface (CLI)
 </p>
 
 <p align="center">
