@@ -1,3 +1,10 @@
+## [1.0.6-next.1](https://github.com/document360/d360/compare/v1.0.5...v1.0.6-next.1) (2023-04-19)
+
+
+### Bug Fixes
+
+* cleaned up files ([e40245f](https://github.com/document360/d360/commit/e40245f1475ce1712a2fffa4c8d1d099ee012d7e))
+
 ## [1.0.5](https://github.com/document360/d360/compare/v1.0.4...v1.0.5) (2023-04-12)
 
 
