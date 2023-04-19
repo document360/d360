@@ -4,6 +4,7 @@ import { isCI } from '../helper/isCI';
 import readDirectory from '../helper/readDirectory';
 import terminalWrapper from '../helper/terminalWrapper';
 
+
 export default async function findOasFilesInCurrentDirectory(
 ) {
     const isFindingFiles = ora({ text: 'Looking for json/yaml files..' }).start();
