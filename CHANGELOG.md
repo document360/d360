@@ -1,3 +1,10 @@
+## [1.0.7-next.1](https://github.com/document360/d360/compare/v1.0.6...v1.0.7-next.1) (2023-04-19)
+
+
+### Bug Fixes
+
+* verison bump next ([31ba278](https://github.com/document360/d360/commit/31ba27826bdb90edf3c3683fb030cace9bb9998e))
+
 ## [1.0.6](https://github.com/document360/d360/compare/v1.0.5...v1.0.6) (2023-04-19)
 
 
