@@ -1,3 +1,14 @@
+## [1.0.6](https://github.com/document360/d360/compare/v1.0.5...v1.0.6) (2023-04-19)
+
+
+### Bug Fixes
+
+* cleaned up files ([57511d2](https://github.com/document360/d360/commit/57511d2cfd138d2bd53d26c80ef088194328eda4))
+* updated config file ([8d8ba60](https://github.com/document360/d360/commit/8d8ba604184e36a2c36fae4f23790e3b7940d9c1))
+* updated initOas ([0f1390f](https://github.com/document360/d360/commit/0f1390f073b89ceca5cb2dbf2f693e14fd46b564))
+* version bump one ([ca7b538](https://github.com/document360/d360/commit/ca7b5382759c4b32e0b66b3099ed87f144352fe6))
+* version bump two ([71ccdce](https://github.com/document360/d360/commit/71ccdce0ddc3ec768a86c832ec1cd89bc21240b6))
+
 ## [1.0.6-next.1](https://github.com/document360/d360/compare/v1.0.5...v1.0.6-next.1) (2023-04-19)
 
 
