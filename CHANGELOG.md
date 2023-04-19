@@ -4,6 +4,15 @@
 ### Bug Fixes
 
 * cleaned up files ([57511d2](https://github.com/document360/d360/commit/57511d2cfd138d2bd53d26c80ef088194328eda4))
+* version bump one ([4fb98f4](https://github.com/document360/d360/commit/4fb98f4a8e95c3b42cb93e8bbbe6a0d48334ef2e))
+* version bump two ([48d584a](https://github.com/document360/d360/commit/48d584acafc0ebb2a6783d1abd086c1bf59129ae))
+
+## [1.0.6-next.1](https://github.com/document360/d360/compare/v1.0.5...v1.0.6-next.1) (2023-04-19)
+
+
+### Bug Fixes
+
+* cleaned up files ([57511d2](https://github.com/document360/d360/commit/57511d2cfd138d2bd53d26c80ef088194328eda4))
 
 ## [1.0.6-next.1](https://github.com/document360/d360/compare/v1.0.5...v1.0.6-next.1) (2023-04-19)
 
