@@ -30,8 +30,8 @@ https://github.com/jonschlinkert/markdown-toc/issues/119
 - [Setup](#setup)
 - [Commands](#commands)
   - [apidocs](#apidocs)
-  - [apidocs:resync](#apidocs:resync)
-- [What's Next](#what'snext)
+  - [apidocs:resync](#apidocsresync)
+- [What's Next](#whats-next)
 
 <!-- tocstop -->
 
