@@ -1,3 +1,10 @@
+## [1.0.9](https://github.com/document360/d360/compare/v1.0.8...v1.0.9) (2023-04-20)
+
+
+### Bug Fixes
+
+* bump version ([c64dc2f](https://github.com/document360/d360/commit/c64dc2fdbc4017f969d75b168d4336d64daa3d1e))
+
 ## [1.0.8](https://github.com/document360/d360/compare/v1.0.7...v1.0.8) (2023-04-20)
 
 
