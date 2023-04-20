@@ -12,6 +12,7 @@ import BaseCommand from './commands/baseCommand';
 import { load, loadGlobalHelpCommand, loadHelpCommand } from './commands/mainCommand';
 import { DefaultMainArgs } from './constants';
 import { CommandDefaultOptions } from './models';
+import { setApiHubUrl } from './api/setConfig';
 process.env.NODE_CONFIG_DIR = directory;
 // Uncomment below while running via localhost api
 //process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -37,8 +38,12 @@ export default function d360(processArgs: NodeJS.Process['argv']) {
         const currentCommandArgs = cliArgs(currentCommand.args, { argv: argsFromCli._unknown || [] }) as CommandDefaultOptions;
         if (!currentCommandArgs.apiKey)
             currentCommandArgs.apiKey = getAPIKey();
-        if (!currentCommandArgs.apihubUrl)
+        if (!currentCommandArgs.apihubUrl) {
             currentCommandArgs.apihubUrl = getApiHubUrl();
+        }
+        else {
+            setApiHubUrl(currentCommandArgs.apihubUrl);
+        }
         if (!currentCommandArgs.userId)
             currentCommandArgs.userId = getUserId();
         return currentCommand.run(currentCommandArgs).then((currentCommandArgs: string) => {
