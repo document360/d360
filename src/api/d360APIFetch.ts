@@ -9,12 +9,8 @@ export default async function d360APIFetch<T>(
     options: RequestInit = { headers: new Headers() },
 
 ): Promise<T> {
-    let baseUrl: string;
     const currentEnvironment = getApiHubUrl();
-    baseUrl = config.get("env.eu_baseUrl");
-    if (!currentEnvironment) {
-        baseUrl = config.get("env.eu_baseUrl");
-    }
+    const baseUrl = currentEnvironment ?? config.get("env.eu_baseUrl");
     const url = `${baseUrl}${path}`;
     let headers = options.headers as Headers;
     if (!(options.headers instanceof Headers)) {
