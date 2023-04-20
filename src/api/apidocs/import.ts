@@ -11,7 +11,6 @@ import { ApiResponse } from "../../models/api-response";
 import { ImportApiReferenceSummary } from "../../models/import.model";
 import d360APIFetch from "../d360APIFetch";
 
-
 export default async function importFlow(options: ImportCommandOptions) {
     const spinner = ora({ text: 'Importing..' });
     spinner.start();
