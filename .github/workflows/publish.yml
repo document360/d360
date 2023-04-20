@@ -5,10 +5,12 @@ name: Node.js CI
 
 on:
   workflow_dispatch:
-  push:
-    branches: 
+  pull_request:
+    branches:
       - main
       - next
+    types:
+      - closed
 
 jobs:
   publish:
