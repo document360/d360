@@ -1,6 +1,6 @@
 import { OptionDefinition } from "command-line-usage";
 
-import configStore from "../api/config-store";
+import { setAPIKey, setUserId } from "../api/setConfig";
 import { CommandCategories, Messages } from "../constants";
 import { error } from "../helper/consoleWrapper";
 import { isCI } from "../helper/isCI";
@@ -38,7 +38,7 @@ export default class BaseCommand {
       ]);
       if (apiKeyAnswer.apiKey) {
         options.apiKey = apiKeyAnswer.apiKey;
-        configStore.set('apiKey', apiKeyAnswer.apiKey);
+        setAPIKey(apiKeyAnswer.apiKey);
       }
     }
     else {
@@ -59,13 +59,14 @@ export default class BaseCommand {
       ]);
       if (apiKeyAnswer.userId) {
         options.userId = apiKeyAnswer.userId;
-        configStore.set('userId', apiKeyAnswer.userId);
+        setUserId(apiKeyAnswer.userId);
       }
     }
     else {
       throw new Error(Messages.apiKeyNotFoundInCI);
     }
   }
+
 }
 
 
