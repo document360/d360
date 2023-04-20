@@ -5,22 +5,25 @@ name: Publish
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
     branches:
       - main
       - next
+    types:
+      - closed
 
 jobs:
   publish:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v3
-     - name: Use Node.js ${{ matrix.node-version }}
-       uses: actions/setup-node@v3
-       with:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
           node-version: ${{ matrix.node-version }}
-     - run: npm ci
-     - run: npm run build && npm run semantic-release
-       env: 
+      - run: npm ci
+      - run: npm run build && npm run semantic-release
+        env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
