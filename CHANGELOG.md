@@ -1,3 +1,12 @@
+## [1.0.7](https://github.com/document360/d360/compare/v1.0.6...v1.0.7) (2023-04-20)
+
+
+### Bug Fixes
+
+* updated workflow file ([0a297a7](https://github.com/document360/d360/commit/0a297a7e9b4349f40c2f1ffbb3fb57c443ad4262))
+* updated yml ([dc1256c](https://github.com/document360/d360/commit/dc1256cf71c0daba0aee0102cb3917f5e46053de))
+* updated yml file ([bf67cd1](https://github.com/document360/d360/commit/bf67cd137ddd531f3f4e89c2b794de07c9156c6a))
+
 ## [1.0.6](https://github.com/document360/d360/compare/v1.0.5...v1.0.6) (2023-04-19)
 
 
