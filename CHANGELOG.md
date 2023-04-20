@@ -1,3 +1,12 @@
+## [1.0.8-next.1](https://github.com/document360/d360/compare/v1.0.7...v1.0.8-next.1) (2023-04-20)
+
+
+### Bug Fixes
+
+* updated import file ([ea8bd08](https://github.com/document360/d360/commit/ea8bd085ebea2241a7f1fce617a52c79e7655c25))
+* updated package json ([662b38f](https://github.com/document360/d360/commit/662b38fc6d5dcd879a3e46b2d0e006ed75e557f1))
+* updated publish yml file ([a49a788](https://github.com/document360/d360/commit/a49a7884e31e8a9d22834ce3de9821c18200dcb2))
+
 ## [1.0.7](https://github.com/document360/d360/compare/v1.0.6...v1.0.7) (2023-04-20)
 
 
