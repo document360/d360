@@ -1,3 +1,10 @@
+## [1.0.10-next.3](https://github.com/document360/d360/compare/v1.0.10-next.2...v1.0.10-next.3) (2023-04-21)
+
+
+### Bug Fixes
+
+* **base url fix:** base url caching and changed the base url in config file ([8d72a40](https://github.com/document360/d360/commit/8d72a40a4328b63476f2ec0e07137eeaa29baca3))
+
 ## [1.0.10-next.2](https://github.com/document360/d360/compare/v1.0.10-next.1...v1.0.10-next.2) (2023-04-20)
 
 
