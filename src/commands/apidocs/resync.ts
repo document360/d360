@@ -18,37 +18,37 @@ export default class ResyncCommand extends BaseCommand {
             {
                 name: "apiKey",
                 type: String,
-                description: "Your apikey"
+                description: "Project API Key"
             },
             {
                 name: "userId",
                 type: String,
-                description: "The userId used for importing the API Docs"
+                description: "User Id that's used to generate API Docs"
             },
             {
                 name: "apiReferenceId",
                 type: String,
-                description: "Provide the API Reference Id which you would like to resync",
+                description: "API Reference Id to resync",
             },
             {
                 name: "apihubUrl",
                 type: String,
-                description: "Enter the apihub url"
+                description: "APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'"
             },
             {
                 name: "path",
                 type: String,
-                description: "File path / URL"
+                description: "File path of your respective API Reference"
             },
             {
                 name: "force",
-                type: String,
-                description: "Force import your spec file"
+                type: Boolean,
+                description: "Force import your API Reference. It will import even if there are errors or warnings present within your specification files."
             },
             {
                 name: "publish",
-                type: String,
-                description: "Publish your articles to your knowledge base site"
+                type: Boolean,
+                description: "Publish articles after import. By default, all the articles will be in draft state after import"
             }
         ]
     }

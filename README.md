@@ -89,8 +89,8 @@ d360 apidocs:resync --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
 | apiReferenceId `string` | API Reference Id to resync                                                                      |
 | apihubUrl `string`      | APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'        |
 | path `string`           | File path of your respective API Definitions                                                    |
-| force `boolean`         | Force import your API Reference. It will import even your spec files has errors and warnings    |
-| publish `boolean`       | Publish articles after import. By default, all the articles will be in draft state after import |
+| force `boolean`         | Force resync your API Reference. It will resync even your spec files has errors and warnings    |
+| publish `boolean`       | Publish articles after resync. By default, all the articles will be in draft state after resync |
 
 ## What's next
 

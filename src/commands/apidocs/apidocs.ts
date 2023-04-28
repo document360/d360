@@ -20,37 +20,37 @@ export default class APIDocsCommand extends BaseCommand {
             {
                 name: "apiKey",
                 type: String,
-                description: "Your apikey"
+                description: "Project API Key"
             },
             {
                 name: "userId",
                 type: String,
-                description: "The userId used for importing the API Docs"
+                description: "Project API Key"
             },
             {
                 name: "versionId",
                 type: String,
-                description: "API documentation project version Id",
+                description: "Project Version Id",
             },
             {
                 name: "apihubUrl",
                 type: String,
-                description: "Enter the apihub url"
+                description: "APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'"
             },
             {
                 name: "path",
                 type: String,
-                description: "File path / URL"
+                description: "File path of your respective API Reference"
             },
             {
                 name: "force",
                 type: String,
-                description: "Force import your spec file"
+                description: "Force resync your API Reference. It will resync even if there are errors or warnings present within your specification files"
             },
             {
                 name: "publish",
                 type: String,
-                description: "Publish your articles to your knowledge base site"
+                description: "Publish articles after resync. By default, all the articles will be in draft state after resync"
             }
         ]
     }
