@@ -1,9 +1,6 @@
 export function isURL(value: string): boolean {
-    try {
-        new URL(value);
+    if (value.startsWith("https://")) {
+        return true;
     }
-    catch {
-        return false;
-    }
-    return true;
+    return false;
 }
