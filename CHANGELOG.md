@@ -1,3 +1,10 @@
+## [1.0.10-next.5](https://github.com/document360/d360/compare/v1.0.10-next.4...v1.0.10-next.5) (2023-04-29)
+
+
+### Bug Fixes
+
+* url bugfix ([695e5a3](https://github.com/document360/d360/commit/695e5a34c8140268a14d8a1bc4baaa4d80f68763))
+
 ## [1.0.10-next.4](https://github.com/document360/d360/compare/v1.0.10-next.3...v1.0.10-next.4) (2023-04-28)
 
 
