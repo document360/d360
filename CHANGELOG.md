@@ -1,3 +1,14 @@
+## [1.0.10](https://github.com/document360/d360/compare/v1.0.9...v1.0.10) (2023-04-29)
+
+
+### Bug Fixes
+
+* **base url fix:** base url caching and changed the base url in config file ([6b2dc16](https://github.com/document360/d360/commit/6b2dc16576072b4ace1db826bd356e2add1230d2))
+* description and readme update ([6f3cebf](https://github.com/document360/d360/commit/6f3cebf8529c52a30ed3328903b4dd83ea2e1b36))
+* updated file ([6adb1d4](https://github.com/document360/d360/commit/6adb1d43469bb0390aa33d03023be2de6d8332a0))
+* updated file name ([f369ba2](https://github.com/document360/d360/commit/f369ba2bff46fba2d54117287ad1e92e9e17df96))
+* url bugfix ([2670595](https://github.com/document360/d360/commit/267059575de63186b93a4778330599cc82f9a455))
+
 ## [1.0.10-next.5](https://github.com/document360/d360/compare/v1.0.10-next.4...v1.0.10-next.5) (2023-04-29)
 
 
