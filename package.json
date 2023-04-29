@@ -18,6 +18,17 @@
     "url": "https://github.com/document360/d360"
   },
   "author": "Suhas Parameshwara",
+  "keywords": [
+    "api documentation",
+    "api",
+    "oas",
+    "apidocs",
+    "apidocs resync",
+    "apidocs import",
+    "openapi",
+    "document360",
+    "swagger"
+  ],
   "license": "MIT",
   "dependencies": {
     "@npmcli/ci-detect": "^3.0.2",
