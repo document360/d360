@@ -1,3 +1,10 @@
+# [1.1.0-next.1](https://github.com/document360/d360/compare/v1.0.10-next.6...v1.1.0-next.1) (2023-05-25)
+
+
+### Features
+
+* updated changelog ([fff0f7c](https://github.com/document360/d360/commit/fff0f7c81e21f7d31cf6f4fe766dfeb7174f9995))
+
 ## [1.0.10](https://github.com/document360/d360/compare/v1.0.9...v1.0.10) (2023-04-29)
 
 ### Bug Fixes
