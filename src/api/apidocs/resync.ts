@@ -1,5 +1,5 @@
 import FormData from "form-data";
-import fs from 'fs';
+import fs from "fs";
 import { Headers } from "node-fetch";
 import ora from "ora";
 import { getCIName } from "../../helper/isCI";
@@ -11,16 +11,15 @@ import { ImportApiReferenceSummary } from "../../models/import.model";
 import { error, success } from "../../helper/consoleWrapper";
 
 export default async function resyncFlow(options: ResyncCommandOptions) {
-    console.log
-    const spinner = ora({ text: 'Resyncing..' });
+    const spinner = ora({ text: "Resyncing.." });
     spinner.start();
     const formData = getResyncRequestFormData(options);
     const requestOptions = {
-        method: 'POST',
+        method: "POST",
         body: formData,
         headers: new Headers({
-            'api_token': options.apiKey
-        })
+            api_token: options.apiKey,
+        }),
     };
     let requestUrl = `/v2/apidocs/${options.apiReferenceId}/resync/${options.userId}`;
     if (options.publish) {
@@ -36,8 +35,7 @@ function getResyncRequestFormData(options: ResyncCommandOptions) {
     if (!isURL(options.path)) {
         const stream = fs.createReadStream(options.path);
         formData.append("file", stream);
-    }
-    else {
+    } else {
         formData.append("url", options.path);
     }
     formData.append("apiReferenceId", options.apiReferenceId);
@@ -56,15 +54,14 @@ function handleResyncResponse(response: ApiResponse<ImportApiReferenceSummary>) 
         const importErrors = response?.result?.errors;
         if (importErrors == null && importWarnings == null) {
             success("Resync Successful!");
-        }
-        else if (importWarnings.length > 0 && importErrors.length > 0) {
-            error(`Resync failed! We found around ${importWarnings.length} warnings and ${importErrors.length} errors. You can use --force=true to force import your spec file`);
-        }
-        else if (importWarnings.length > 0) {
-            error(`Resync failed! We found around ${importWarnings.length} warnings. You can use --force=true to force import your spec file`);
-        }
-        else if (importErrors.length > 0) {
-            error(`Resync failed! We found around ${importErrors.length} errors. You can use --force=true to force import your spec file`);
+        } else if (importWarnings.length > 0 && importErrors.length > 0) {
+            error(
+                `Resync failed! We found around ${importWarnings.length} warnings and ${importErrors.length} errors. You can use --force to force import your spec file`
+            );
+        } else if (importWarnings.length > 0) {
+            error(`Resync failed! We found around ${importWarnings.length} warnings. You can use --force to force import your spec file`);
+        } else if (importErrors.length > 0) {
+            error(`Resync failed! We found around ${importErrors.length} errors. You can use --force to force import your spec file`);
         }
     }
 }

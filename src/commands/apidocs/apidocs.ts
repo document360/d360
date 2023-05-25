@@ -1,14 +1,13 @@
-import prompts from 'prompts';
-import importFlow from '../../api/apidocs/import';
-import findOasFilesInCurrentDirectory from '../../api/initOas';
-import { CommandCategories } from '../../constants';
-import { isCI } from '../../helper/isCI';
-import terminalWrapper from '../../helper/terminalWrapper';
+import prompts from "prompts";
+import importFlow from "../../api/apidocs/import";
+import findOasFilesInCurrentDirectory from "../../api/initOas";
+import { CommandCategories } from "../../constants";
+import { isCI } from "../../helper/isCI";
+import terminalWrapper from "../../helper/terminalWrapper";
 import { ImportCommandOptions } from "../../models";
 import BaseCommand from "../baseCommand";
 
 export default class APIDocsCommand extends BaseCommand {
-
     constructor() {
         super();
 
@@ -20,12 +19,12 @@ export default class APIDocsCommand extends BaseCommand {
             {
                 name: "apiKey",
                 type: String,
-                description: "Project API Key"
+                description: "Project API Key",
             },
             {
                 name: "userId",
                 type: String,
-                description: "Project API Key"
+                description: "Project API Key",
             },
             {
                 name: "versionId",
@@ -35,24 +34,25 @@ export default class APIDocsCommand extends BaseCommand {
             {
                 name: "apihubUrl",
                 type: String,
-                description: "APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'"
+                description: "APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'",
             },
             {
                 name: "path",
                 type: String,
-                description: "File path of your respective API Reference"
+                description: "File path of your respective API Reference",
             },
             {
                 name: "force",
-                type: String,
-                description: "Force resync your API Reference. It will resync even if there are errors or warnings present within your specification files"
+                type: Boolean,
+                description:
+                    "Force resync your API Reference. It will resync even if there are errors or warnings present within your specification files",
             },
             {
                 name: "publish",
-                type: String,
-                description: "Publish articles after resync. By default, all the articles will be in draft state after resync"
-            }
-        ]
+                type: Boolean,
+                description: "Publish articles after resync. By default, all the articles will be in draft state after resync",
+            },
+        ];
     }
     async run(options?: ImportCommandOptions): Promise<string> {
         await super.run(options);
@@ -60,21 +60,17 @@ export default class APIDocsCommand extends BaseCommand {
             if (!options.versionId) {
                 const versionIdAnswer = await terminalWrapper([
                     {
-                        type: 'text',
-                        name: 'versionId',
-                        message: 'Enter project document version id',
-                    }
+                        type: "text",
+                        name: "versionId",
+                        message: "Enter project document version id",
+                    },
                 ]);
                 options.versionId = versionIdAnswer.versionId;
             }
-            if (!options.path)
-                options.path = await findOasFilesInCurrentDirectory();
-        }
-        else {
-            if (!options.versionId)
-                throw new Error("versionId parameter not found. Please provide --versionId");
-            if (!options.path)
-                options.path = await findOasFilesInCurrentDirectory();
+            if (!options.path) options.path = await findOasFilesInCurrentDirectory();
+        } else {
+            if (!options.versionId) throw new Error("versionId parameter not found. Please provide --versionId");
+            if (!options.path) options.path = await findOasFilesInCurrentDirectory();
         }
         prompts.override(options);
         await importFlow(options);

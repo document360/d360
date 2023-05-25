@@ -1,6 +1,6 @@
 //import chalk from "chalk";
 import FormData from "form-data";
-import fs from 'fs';
+import fs from "fs";
 import { Headers } from "node-fetch";
 import ora from "ora";
 import { error, success } from "../../helper/consoleWrapper";
@@ -12,15 +12,15 @@ import { ImportApiReferenceSummary } from "../../models/import.model";
 import d360APIFetch from "../d360APIFetch";
 
 export default async function importFlow(options: ImportCommandOptions) {
-    const spinner = ora({ text: 'Importing..' });
+    const spinner = ora({ text: "Importing.." });
     spinner.start();
     const formData = getImportRequestFormData(options);
     const requestOptions = {
-        method: 'POST',
+        method: "POST",
         body: formData,
         headers: new Headers({
-            'api_token': options.apiKey
-        })
+            api_token: options.apiKey,
+        }),
     };
     let requestUrl = `/v2/apidocs/import/${options.userId}`;
     if (options.publish) {
@@ -36,14 +36,13 @@ function getImportRequestFormData(options: ImportCommandOptions) {
     if (!isURL(options.path)) {
         const stream = fs.createReadStream(options.path);
         formData.append("file", stream);
-    }
-    else {
+    } else {
         formData.append("url", options.path);
     }
     formData.append("projectVersionId", options.versionId);
     formData.append("sourceType", ApiReferenceSourceType.CommandLine);
     formData.append("operationType", ApiReferenceOperationType.Import);
-    formData.append("ciName", getCIName() ?? 'command-line');
+    formData.append("ciName", getCIName() ?? "command-line");
     if (options.force) {
         formData.append("proceedAnyway", "true");
     }
@@ -56,15 +55,14 @@ function handleImportResponse(response: ApiResponse<ImportApiReferenceSummary>) 
         const importErrors = response?.result?.errors;
         if (importErrors == null && importWarnings == null) {
             success("Import Successful!");
-        }
-        else if (importWarnings.length > 0 && importErrors.length > 0) {
-            error(`Import failed! We found around ${importWarnings.length} warnings and ${importErrors.length} errors. You can use --force=true to force import your spec file`);
-        }
-        else if (importWarnings.length > 0) {
-            error(`Import failed! We found around ${importWarnings.length} warnings. You can use --force=true to force import your spec file`);
-        }
-        else if (importErrors.length > 0) {
-            error(`Import failed! We found around ${importErrors.length} errors. You can use --force=true to force import your spec file`);
+        } else if (importWarnings.length > 0 && importErrors.length > 0) {
+            error(
+                `Import failed! We found around ${importWarnings.length} warnings and ${importErrors.length} errors. You can use --force to force import your spec file`
+            );
+        } else if (importWarnings.length > 0) {
+            error(`Import failed! We found around ${importWarnings.length} warnings. You can use --force to force import your spec file`);
+        } else if (importErrors.length > 0) {
+            error(`Import failed! We found around ${importErrors.length} errors. You can use --force to force import your spec file`);
         }
     }
 }
