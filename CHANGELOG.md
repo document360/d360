@@ -1,10 +1,3 @@
-## [1.0.10-next.6](https://github.com/document360/d360/compare/v1.0.10-next.5...v1.0.10-next.6) (2023-05-25)
-
-
-### Bug Fixes
-
-* argument bug fix ([bc3b9d9](https://github.com/document360/d360/commit/bc3b9d9b9b55ebb79e98b58d9a50fccad051e2f0))
-
 ## [1.0.10](https://github.com/document360/d360/compare/v1.0.9...v1.0.10) (2023-04-29)
 
 ### Bug Fixes
