@@ -1,10 +1,8 @@
-## [1.0.11](https://github.com/document360/d360/compare/v1.0.10...v1.0.11) (2023-05-29)
+# [1.1.0-next.1](https://github.com/document360/d360/compare/v1.0.10-next.6...v1.1.0-next.1) (2023-05-25)
 
+### Features
 
-### Bug Fixes
-
-* argument bug fix ([e37872e](https://github.com/document360/d360/commit/e37872e80a4be2a2d9ab8a9401d1e35aee0fca9c))
-* updated the userId description ([3d23146](https://github.com/document360/d360/commit/3d23146d51a57110b24b043699b10c95ff802301))
+- updated changelog ([fff0f7c](https://github.com/document360/d360/commit/fff0f7c81e21f7d31cf6f4fe766dfeb7174f9995))
 
 ## [1.0.10](https://github.com/document360/d360/compare/v1.0.9...v1.0.10) (2023-04-29)
 
