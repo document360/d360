@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/document360/d360/compare/v1.0.11...v1.1.0) (2023-05-29)
+
+
+### Features
+
+* updated changelog ([6eda201](https://github.com/document360/d360/commit/6eda20120c7350ddecacdacb0cc634cc3db9049d))
+
 # [1.1.0-next.1](https://github.com/document360/d360/compare/v1.0.10-next.6...v1.1.0-next.1) (2023-05-25)
 
 ### Features
