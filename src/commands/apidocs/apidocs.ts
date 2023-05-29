@@ -24,7 +24,7 @@ export default class APIDocsCommand extends BaseCommand {
             {
                 name: "userId",
                 type: String,
-                description: "Project API Key",
+                description: "User Id that's used to generate API Docs",
             },
             {
                 name: "versionId",
