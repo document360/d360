@@ -12,4 +12,11 @@ function success(message: string) {
     return console.log(chalk.green(message));
 }
 
-export { error, info, success };
+function warning(message: string) {
+  return console.warn(chalk.yellow(message));
+}
+function heading(message: string) {
+  return console.warn(chalk.white(message));
+}
+
+export { error, info, success, heading, warning };

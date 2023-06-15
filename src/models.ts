@@ -48,3 +48,6 @@ export enum ApiReferenceOperationType {
     Resync
 }
 
+export interface ValidateCommandOptions extends CommandDefaultOptions {
+    path: string;
+}
