@@ -31,6 +31,7 @@ https://github.com/jonschlinkert/markdown-toc/issues/119
 - [Commands](#commands)
   - [apidocs](#apidocs)
   - [apidocs:resync](#apidocsresync)
+  - [apidocs:validate](#apidocsvalidate)
 - [What's Next](#whats-next)
 
 <!-- tocstop -->
@@ -92,6 +93,22 @@ d360 apidocs:resync --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
 | force `boolean`         | Force resync your API Reference. It will resync even your spec files has errors and warnings    |
 | publish `boolean`       | Publish articles after resync. By default, all the articles will be in draft state after resync |
 
-## What's next
+### apidocs:validate
 
-As part of our ongoing efforts to enhance the user experience of our d360 npm package, we are committed to supporting backward compatibility to the best of our ability.
+With the 'apidocs:validate' command, you will be able to validate your OpenAPI Specification(OAS) file.
+
+```sh
+d360 apidocs:validate --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
+                      --apiReferenceId=d486783f-b833-446e-aa71-615ac51392c3
+                      --path=https://petstore.swagger.io/v2/swagger.json
+```
+
+| Options            | Description                                                                              |
+| ------------------ | ---------------------------------------------------------------------------------------- |
+| apiKey `string`    | Project API Key                                                                          |
+| apihubUrl `string` | APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io' |
+| path `string`      | File path of your respective API Definitions                                             |
+
+## What's next ?
+
+As part of our ongoing efforts to enhance the user experience of our d360 npm package, we are committed to support backward compatibility to the best of our ability.

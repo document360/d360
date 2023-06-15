@@ -56,12 +56,12 @@ function handleResyncResponse(response: ApiResponse<ImportApiReferenceSummary>) 
             success("Resync Successful!");
         } else if (importWarnings.length > 0 && importErrors.length > 0) {
             error(
-                `Resync failed! We found around ${importWarnings.length} warnings and ${importErrors.length} errors. You can use --force to force import your spec file`
+              `Resync failed! We found ${importWarnings.length} alert(s) and ${importErrors.length} errors. You can use --force to force import your spec file`
             );
         } else if (importWarnings.length > 0) {
-            error(`Resync failed! We found around ${importWarnings.length} warnings. You can use --force to force import your spec file`);
+            error(`Resync failed! We found ${importWarnings.length} alert(s). You can use --force to force import your spec file`);
         } else if (importErrors.length > 0) {
-            error(`Resync failed! We found around ${importErrors.length} errors. You can use --force to force import your spec file`);
+            error(`Resync failed! We found ${importErrors.length} errors. You can use --force to force import your spec file`);
         }
     }
 }

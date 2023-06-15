@@ -17,3 +17,21 @@ export interface LogMessageAndPointer {
     logMessage: string;
     logPointer: string;
 }
+export interface ValidateApiReferenceSummary {
+    rootCategoryId: string;
+    projectId: string;
+    projectDocumentVersionId: string;
+    categoriesCreated: number;
+    articlesCreated: number;
+    isApiDefinitionImported: boolean;
+    errors: ValidateMessageAndPointer[];
+    warnings: ValidateMessageAndPointer[];
+    isSuccess: boolean;
+    apiDefinitionsCount: number;
+    apiDefinitionId?: string;
+    isServerAvailable: boolean;
+}
+export interface ValidateMessageAndPointer {
+    logMessage: string;
+    logPointer: string;
+}

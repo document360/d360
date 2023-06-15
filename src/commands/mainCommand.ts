@@ -5,11 +5,13 @@ import { Command } from '../models';
 import APIDocsCommand from "./apidocs/apidocs";
 import ResyncCommand from './apidocs/resync';
 import BaseCommand from "./baseCommand";
+import ValidateCommand from "./apidocs/validate";
 
 export const commands = {
-    'apidocs': APIDocsCommand,
-    'apidocs:resync': ResyncCommand
-}
+    apidocs: APIDocsCommand,
+    "apidocs:resync": ResyncCommand,
+    "apidocs:validate": ValidateCommand,
+};
 
 export function load(command: keyof typeof commands) {
     if (!(command in commands)) {
