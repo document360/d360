@@ -1,3 +1,10 @@
+## [1.1.1-next.1](https://github.com/document360/d360/compare/v1.1.0...v1.1.1-next.1) (2023-06-15)
+
+
+### Bug Fixes
+
+* argument bug fix ([d6d478f](https://github.com/document360/d360/commit/d6d478ffb51889cead063dbc9782a32dfd842b29))
+
 # [1.1.0](https://github.com/document360/d360/compare/v1.0.11...v1.1.0) (2023-05-29)
 
 ### Features
