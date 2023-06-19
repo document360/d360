@@ -53,7 +53,7 @@ function handleImportResponse(response: ApiResponse<ImportApiReferenceSummary>) 
     if (response?.success) {
         const importWarnings = response?.result?.warnings;
         const importErrors = response?.result?.errors;
-        if ((importErrors == null && importWarnings == null) || (importErrors.length <= 0 && importWarnings.length <= 0)) {
+        if ((importErrors == null && importWarnings == null)  ||  (importErrors.length <= 0 && importWarnings.length <= 0)) {
           success("Import Successful!");
         } else if (importWarnings.length > 0 && importErrors.length > 0) {
           error(
