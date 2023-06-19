@@ -55,8 +55,8 @@ function handleValidateResponse(response: ApiResponse<ImportApiReferenceSummary>
   if (response?.success) {
     const importWarnings = response?.result?.warnings;
     const importErrors = response?.result?.errors;
-    if (importErrors == null && importWarnings == null) {
-      success("Validation successful no error found..!");
+    if ((importErrors == null && importWarnings == null) || (importErrors.length <= 0 && importWarnings.length <= 0)) {
+      success("No errors were found. Your spec file has been validated successfully.");
     } else if (importWarnings.length > 0 && importErrors.length > 0) {
       showAlerts(importWarnings);
       showErrors(importErrors);
