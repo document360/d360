@@ -52,16 +52,16 @@ function handleResyncResponse(response: ApiResponse<ImportApiReferenceSummary>) 
     if (response?.success) {
         const importWarnings = response?.result?.warnings;
         const importErrors = response?.result?.errors;
-        if (importErrors == null && importWarnings == null) {
-            success("Resync Successful!");
+        if ((importErrors == null && importWarnings == null) || (importErrors.length <= 0 && importWarnings.length <= 0)) {
+          success("Resync Successful!");
         } else if (importWarnings.length > 0 && importErrors.length > 0) {
-            error(
-              `Resync failed! We found ${importWarnings.length} alert(s) and ${importErrors.length} errors. You can use --force to force import your spec file`
-            );
+          error(
+            `Resync failed! We found ${importWarnings.length} alert(s) and ${importErrors.length} errors. You can use --force to force import your spec file`
+          );
         } else if (importWarnings.length > 0) {
-            error(`Resync failed! We found ${importWarnings.length} alert(s). You can use --force to force import your spec file`);
+          error(`Resync failed! We found ${importWarnings.length} alert(s). You can use --force to force import your spec file`);
         } else if (importErrors.length > 0) {
-            error(`Resync failed! We found ${importErrors.length} errors. You can use --force to force import your spec file`);
+          error(`Resync failed! We found ${importErrors.length} errors. You can use --force to force import your spec file`);
         }
     }
 }
