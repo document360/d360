@@ -1,3 +1,10 @@
+## [1.1.1-next.2](https://github.com/document360/d360/compare/v1.1.1-next.1...v1.1.1-next.2) (2023-06-19)
+
+
+### Bug Fixes
+
+* updated success status ([ab4977a](https://github.com/document360/d360/commit/ab4977af28ff5bd9653d423ab14276ba21c93254))
+
 ## [1.1.1-next.1](https://github.com/document360/d360/compare/v1.1.0...v1.1.1-next.1) (2023-06-15)
 
 
