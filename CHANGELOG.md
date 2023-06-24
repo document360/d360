@@ -1,3 +1,10 @@
+## [1.1.1-next.3](https://github.com/document360/d360/compare/v1.1.1-next.2...v1.1.1-next.3) (2023-06-24)
+
+
+### Bug Fixes
+
+* updated readme file ([d1b8b99](https://github.com/document360/d360/commit/d1b8b99100f7e1d41f8f3667dbc3bb36303c0c9f))
+
 ## [1.1.1-next.2](https://github.com/document360/d360/compare/v1.1.1-next.1...v1.1.1-next.2) (2023-06-19)
 
 
