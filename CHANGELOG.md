@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/document360/d360/compare/v1.1.0...v1.1.1) (2023-06-24)
+
+
+### Bug Fixes
+
+* argument bug fix ([2c79c6d](https://github.com/document360/d360/commit/2c79c6d0398fe18f3d083fdd1c6af6fa53bac503))
+* updated readme file ([99852f2](https://github.com/document360/d360/commit/99852f2cf9529fe222563fcb747436dc5042be8b))
+* updated success status ([37b88b2](https://github.com/document360/d360/commit/37b88b2ed42917c820460b92e8999f1e05a9db08))
+
 ## [1.1.1-next.3](https://github.com/document360/d360/compare/v1.1.1-next.2...v1.1.1-next.3) (2023-06-24)
 
 
