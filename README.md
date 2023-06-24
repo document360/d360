@@ -99,7 +99,7 @@ With the 'apidocs:validate' command, you will be able to validate your OpenAPI S
 
 ```sh
 d360 apidocs:validate --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
-                      --apiReferenceId=d486783f-b833-446e-aa71-615ac51392c3
+                      --apihubUrl=https://apihub.document360.io
                       --path=https://petstore.swagger.io/v2/swagger.json
 ```
 
