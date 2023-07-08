@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/document360/d360/compare/v1.1.1...v1.1.2) (2023-07-08)
+
+
+### Bug Fixes
+
+* added validation for servers in a specFile ([7f55aa2](https://github.com/document360/d360/commit/7f55aa22f1b80b7372ac932d5a83f9524a38d401))
+
 ## [1.1.2-next.1](https://github.com/document360/d360/compare/v1.1.1...v1.1.2-next.1) (2023-07-07)
 
 
