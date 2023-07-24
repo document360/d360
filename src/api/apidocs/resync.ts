@@ -53,8 +53,7 @@ function handleResyncResponse(response: ApiResponse<ImportApiReferenceSummary>) 
     const importWarnings = response?.result?.warnings;
     const importErrors = response?.result?.errors;
     const isServersAvailable = response?.result?.is_server_available;
-    const apiDefinitionImported = response?.result?.api_definition_id != null ? true : false;
-    if (importErrors == null && importWarnings == null && apiDefinitionImported == true) {
+    if (importErrors == null && importWarnings == null) {
       success("Resync Successful!");
     } else if (isServersAvailable != true && importWarnings.length < 1 && importErrors.length < 1) {
       showServerUnAwailableWarning(true);
