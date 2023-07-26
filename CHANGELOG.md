@@ -1,3 +1,10 @@
+## [1.1.3-next.1](https://github.com/document360/d360/compare/v1.1.2...v1.1.3-next.1) (2023-07-26)
+
+
+### Bug Fixes
+
+* resync response issue fixed ([ff18409](https://github.com/document360/d360/commit/ff1840990a26ac1da62e5901a21860a402caf3c5))
+
 ## [1.1.2](https://github.com/document360/d360/compare/v1.1.1...v1.1.2) (2023-07-08)
 
 
