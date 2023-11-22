@@ -37,7 +37,6 @@
     "command-line-usage": "^7.0.1",
     "config": "^3.1.0",
     "configstore": "^5.0.0",
-    "cp": "^0.2.0",
     "form-data": "^4.0.0",
     "node-fetch": "^2.6.1",
     "oas-normalize": "^8.3.3",
