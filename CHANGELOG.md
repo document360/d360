@@ -1,3 +1,10 @@
+## [1.1.4-next.1](https://github.com/document360/d360/compare/v1.1.3...v1.1.4-next.1) (2023-11-22)
+
+
+### Bug Fixes
+
+* version command ([77239f2](https://github.com/document360/d360/commit/77239f24212d95089a5539f1e235891eb8959d06))
+
 ## [1.1.3](https://github.com/document360/d360/compare/v1.1.2...v1.1.3) (2023-08-07)
 
 
