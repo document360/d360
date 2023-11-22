@@ -1,3 +1,10 @@
+## [1.1.4-next.2](https://github.com/document360/d360/compare/v1.1.4-next.1...v1.1.4-next.2) (2023-11-22)
+
+
+### Bug Fixes
+
+* release config changes ([235090b](https://github.com/document360/d360/commit/235090b5fc60733767ca8abbef2b0c5a1573f118))
+
 ## [1.1.4-next.1](https://github.com/document360/d360/compare/v1.1.3...v1.1.4-next.1) (2023-11-22)
 
 
