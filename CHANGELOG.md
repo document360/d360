@@ -1,3 +1,10 @@
+## [1.1.4-next.9](https://github.com/document360/d360/compare/v1.1.4-next.8...v1.1.4-next.9) (2023-11-22)
+
+
+### Bug Fixes
+
+* added path to npm release ([98de1b7](https://github.com/document360/d360/commit/98de1b78eccfd36f2c3a184b4bd79a3b27a03dcc))
+
 ## [1.1.4-next.8](https://github.com/document360/d360/compare/v1.1.4-next.7...v1.1.4-next.8) (2023-11-22)
 
 
