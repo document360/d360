@@ -1,3 +1,11 @@
+## [1.1.4-next.6](https://github.com/document360/d360/compare/v1.1.4-next.5...v1.1.4-next.6) (2023-11-22)
+
+
+### Bug Fixes
+
+* build check ([cad56f7](https://github.com/document360/d360/commit/cad56f7a23d3aed178cdaabb40b54a523451b386))
+* removed the cp package ([e8dbab1](https://github.com/document360/d360/commit/e8dbab1b95031b73dfe2f042cc7132d6fbe3c7b9))
+
 ## [1.1.4-next.5](https://github.com/document360/d360/compare/v1.1.4-next.4...v1.1.4-next.5) (2023-11-22)
 
 
