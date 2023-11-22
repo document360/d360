@@ -1,3 +1,10 @@
+## [1.1.4-next.4](https://github.com/document360/d360/compare/v1.1.4-next.3...v1.1.4-next.4) (2023-11-22)
+
+
+### Bug Fixes
+
+* reverted the publish action workflow changes ([e92d19e](https://github.com/document360/d360/commit/e92d19ecd4b01194f385ae5bca0d74eb9de921f0))
+
 ## [1.1.4-next.3](https://github.com/document360/d360/compare/v1.1.4-next.2...v1.1.4-next.3) (2023-11-22)
 
 
