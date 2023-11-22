@@ -1,3 +1,10 @@
+## [1.1.4-next.3](https://github.com/document360/d360/compare/v1.1.4-next.2...v1.1.4-next.3) (2023-11-22)
+
+
+### Bug Fixes
+
+* updated action file ([5f2cacf](https://github.com/document360/d360/commit/5f2cacf58d98dc712de2b24f7d8286cf8b500517))
+
 ## [1.1.4-next.2](https://github.com/document360/d360/compare/v1.1.4-next.1...v1.1.4-next.2) (2023-11-22)
 
 
