@@ -1,3 +1,10 @@
+## [1.1.4-next.5](https://github.com/document360/d360/compare/v1.1.4-next.4...v1.1.4-next.5) (2023-11-22)
+
+
+### Bug Fixes
+
+* update the semantic-release command ([9d6e19d](https://github.com/document360/d360/commit/9d6e19d6a43600523f1f54e66c7c6bc2f698c537))
+
 ## [1.1.4-next.4](https://github.com/document360/d360/compare/v1.1.4-next.3...v1.1.4-next.4) (2023-11-22)
 
 
