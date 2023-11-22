@@ -1,3 +1,10 @@
+## [1.1.4-next.8](https://github.com/document360/d360/compare/v1.1.4-next.7...v1.1.4-next.8) (2023-11-22)
+
+
+### Bug Fixes
+
+* update the root folder ([3df80cb](https://github.com/document360/d360/commit/3df80cb9331206560369736693e8524857ab03e7))
+
 ## [1.1.4-next.7](https://github.com/document360/d360/compare/v1.1.4-next.6...v1.1.4-next.7) (2023-11-22)
 
 
