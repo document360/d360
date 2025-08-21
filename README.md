@@ -70,7 +70,6 @@ d360 apidocs --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
 | apihubUrl `string` | APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'                                      |
 | path `string`      | File path of your respective API Reference                                                                                    |
 | force `boolean`    | Force import your API Reference. It will import even if there are errors or warnings present within your specification files. |
-| publish `boolean`  | Publish articles after import. By default, all the articles will be in draft state after import                               |
 
 ### apidocs:resync
 
@@ -91,7 +90,6 @@ d360 apidocs:resync --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
 | apihubUrl `string`      | APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io'        |
 | path `string`           | File path of your respective API Definitions                                                    |
 | force `boolean`         | Force resync your API Reference. It will resync even your spec files has errors and warnings    |
-| publish `boolean`       | Publish articles after resync. By default, all the articles will be in draft state after resync |
 
 ### apidocs:validate
 
