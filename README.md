@@ -109,6 +109,6 @@ d360 apidocs:validate --apiKey=c92e71ab-ebdf-4007-89ed-5d47493052cd
 | apihubUrl `string` | APIHUB Base URL. The default value for this parameter is 'https://apihub.document360.io' |
 | path `string`      | File path of your respective API Definitions                                             |
 
-## What's next ?
+## What's Next
 
-As part of our ongoing efforts to enhance the user experience of our d360 npm package, we are committed to support backward compatibility to the best of our ability.
+We continually work to improve this CLI. Backward compatibility is maintained wherever possible so you can upgrade with confidence.
