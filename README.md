@@ -44,6 +44,8 @@ In order to install our package, it is required that you have Node.js already in
 npm install -g d360
 ```
 
+> Note: We recommend using Node.js v14 or later. After a global install you can verify the CLI is available by running `d360 --help`. If the command is not found, ensure your global npm bin directory is on your PATH.
+
 ## Commands
 
 Our npm package includes a list of available commands, which are as follows:
