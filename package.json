@@ -1,7 +1,7 @@
 {
   "name": "d360",
   "version": "0.0.0",
-  "description": "",
+  "description": "Document360 official command-line interface (CLI)",
   "main": "index.ts",
   "scripts": {
     "semantic-release": "semantic-release",
