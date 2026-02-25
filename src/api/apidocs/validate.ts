@@ -4,6 +4,7 @@ import fs from "fs";
 import { Headers } from "node-fetch";
 import ora from "ora";
 import { error, heading, success, warning } from "../../helper/consoleWrapper";
+import { isCI } from "../../helper/isCI";
 import { isURL } from "../../helper/isURL";
 import { ValidateCommandOptions } from "../../models";
 import { ApiResponse } from "../../models/api-response";
@@ -11,7 +12,7 @@ import { ImportApiReferenceSummary } from "../../models/import.model";
 import d360APIFetch from "../d360APIFetch";
 
 export default async function validateFlow(options: ValidateCommandOptions) {
-  const spinner = ora({ text: "Validating.." });
+  const spinner = ora({ text: "Validating..", stream: process.stdout, isEnabled: !isCI() && process.stdout.isTTY });
   spinner.start();
   const formData = getImportRequestFormData(options);
   const requestOptions = {

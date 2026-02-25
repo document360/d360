@@ -2,7 +2,7 @@ import FormData from "form-data";
 import fs from "fs";
 import { Headers } from "node-fetch";
 import ora from "ora";
-import { getCIName } from "../../helper/isCI";
+import { getCIName, isCI } from "../../helper/isCI";
 import { isURL } from "../../helper/isURL";
 import { ApiReferenceOperationType, ApiReferenceSourceType, ResyncCommandOptions } from "../../models";
 import d360APIFetch from "../d360APIFetch";
@@ -11,7 +11,7 @@ import { ImportApiReferenceSummary } from "../../models/import.model";
 import { error, success, warning } from "../../helper/consoleWrapper";
 
 export default async function resyncFlow(options: ResyncCommandOptions) {
-  const spinner = ora({ text: "Resyncing.." });
+  const spinner = ora({ text: "Resyncing..", stream: process.stdout, isEnabled: !isCI() && process.stdout.isTTY });
   spinner.start();
   const formData = getResyncRequestFormData(options);
   const requestOptions = {
@@ -59,7 +59,7 @@ function handleResyncResponse(response: ApiResponse<ImportApiReferenceSummary>) 
       showServerUnAwailableWarning(true);
     } else if (importWarnings.length > 0 && importErrors.length > 0) {
       error(
-        `Resync failed! We found ${importWarnings.length} alert(s) and ${importErrors.length} errors. You can use --force to force import your spec file`
+        `Resync failed! We found ${importWarnings.length} alert(s) and ${importErrors.length} errors. You can use --force to force import your spec file`,
       );
       if (isServersAvailable == false) {
         showServerUnAwailableWarning(false);
@@ -80,7 +80,7 @@ function handleResyncResponse(response: ApiResponse<ImportApiReferenceSummary>) 
 function showServerUnAwailableWarning(withForceInfo: boolean) {
   if (withForceInfo) {
     warning(
-      "You may not be able to use try-it feature. Looks like server variables aren’t defined in your OpenAPI Specification file. You can use --force to force import your spec file"
+      "You may not be able to use try-it feature. Looks like server variables aren’t defined in your OpenAPI Specification file. You can use --force to force import your spec file",
     );
   } else {
     warning("You may not be able to use try-it feature. Looks like server variables aren't defined in your OpenAPI Specification file.");
