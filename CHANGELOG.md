@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/document360/d360/compare/v1.1.3...v1.1.4) (2026-03-13)
+
+
+### Bug Fixes
+
+* fixed false error message logged in CI/CD pipeline ([deb4d96](https://github.com/document360/d360/commit/deb4d96b3d558deafca2358996900cf58b4cab7e))
+
 ## [1.1.3](https://github.com/document360/d360/compare/v1.1.2...v1.1.3) (2023-08-07)
 
 
